@@ -1,0 +1,30 @@
+{
+  "name": "das-mcp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npx ts-node index.ts",
+    "generate-config": "echo '{\"mcpServers\":{\"solana-dev\":{\"command\":\"ts-node\",\"args\":[\"'$(pwd)'/index.ts\"]}}}'",
+    "generate-config:js": "echo '{\"mcpServers\":{\"solana-dev\":{\"command\":\"node\",\"args\":[\"'$(pwd)'/dist/index.js\"]}}}'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c",
+  "dependencies": {
+    "@metaplex-foundation/digital-asset-standard-api": "^1.0.6",
+    "@metaplex-foundation/umi": "^1.2.0",
+    "@metaplex-foundation/umi-bundle-defaults": "^1.2.0",
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "@solana/web3.js": "^1.98.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "typescript": "^5.8.3",
+    "zod": "^3.24.2"
+  }
+}
