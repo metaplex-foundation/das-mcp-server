@@ -12,7 +12,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c",
   "dependencies": {
     "@metaplex-foundation/digital-asset-standard-api": "^1.0.6",
     "@metaplex-foundation/umi": "^1.2.0",
@@ -26,5 +25,12 @@
     "express": "^5.1.0",
     "typescript": "^5.8.3",
     "zod": "^3.24.2"
-  }
+  },
+  "pnpm": {
+    "overrides": {
+      "body-parser@<2.4.0": "^2.4.0",
+      "body-parser@<1.20.9": "^1.20.9"
+    }
+  },
+  "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c"
 }
